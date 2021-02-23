@@ -1,0 +1,146 @@
+// DataScreen 
+public class DataScreen extends Activity implements SensorEventListener {
+
+    //Declare attributes of the class which should be visible from each part of the class
+    //Intern attributes of each method aren´t visible from other parts of the code inside the class
+
+
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+
+    double x,y,z;
+    String time;
+
+    private long start_time;
+
+    private final float NOISE = (float) 0.5;
+
+    private ArrayList SensorData;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.datascreen);
+
+        // Creates an arraylist where the accelerometer data will be stored
+        SensorData = new ArrayList();
+
+        // We receive the Intent´s extras, onStartMessage comes from the Start activity
+        Bundle onStartMessage = getIntent().getExtras();
+
+        // Instance to the accelerometers_text to show the value of the onStartMessage
+        TextView accelerometers_text = (TextView) findViewById(R.id.accelerometers_text);
+        accelerometers_text.setText(Boolean.toString(onStartMessage.getBoolean("onStartMessage")));
+
+        Button startbutton = (Button) findViewById(R.id.start_button);
+        Button stopbutton = (Button) findViewById(R.id.stop_button);
+
+    }
+
+
+    //This is called by de Controls fragment when the user touches the startbutton
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // stops listening the accelerometer
+        mSensorManager.unregisterListener(this);
+    }
+
+
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+
+        double deltaX, deltaY, deltaZ = 0;
+
+        //Enlazamos los recursos de la interfaz con las variables de código que las representan
+        TextView time = (TextView) findViewById(R.id.time);
+
+        TextView x_axis = (TextView) findViewById(R.id.x_axis);
+
+        TextView y_axis = (TextView) findViewById(R.id.y_axis);
+
+        TextView z_axis = (TextView) findViewById(R.id.z_axis);
+
+            deltaX = x - event.values[0];
+            deltaY = y - event.values[1];
+            deltaZ = z - event.values[2];
+
+        if(deltaX > NOISE || deltaY > NOISE || deltaZ > NOISE) {
+
+            time = time((SystemClock.currentThreadTimeMillis() - start_time), "mm:ss:SSS");
+            x = event.values[0];
+            y = event.values[1];
+            z = event.values[2];
+
+            //When the accelerometer receives new values they will be stored in an AccelerometerData object, after that this object will be
+            // stored in an array
+            AccelerometerData data = new AccelerometerData(time, x, y, z);
+            SensorData.add(data);
+
+            time.append(time + System.getProperty("line.separator"));
+            x_axis.append(String.format("%.3f", x) + System.getProperty("line.separator"));
+            y_axis.append(String.format("%.3f", y) + System.getProperty("line.separator"));
+            z_axis.append(String.format("%.3f", z) + System.getProperty("line.separator"));
+        }
+
+    }
+
+    public void onStartClick(View view){
+        //Allow using the accelerometer manually, first we did it onCreate() and onResum()
+
+        // Instance the accelerometer
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
+        // registerListener(EventListener, Sensor, rate)
+        mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+
+
+        // Moment in which the accelerometer is going to store data
+        start_time = SystemClock.currentThreadTimeMillis();
+
+        TextView accelerometers_text = (TextView) findViewById(R.id.accelerometers_text);
+        accelerometers_text.setText("start");
+    }
+
+
+    public void onStopClick(View view){
+        // stops listening the accelerometer
+        mSensorManager.unregisterListener(this);
+    }
+
+    //Exit Button
+    //When we stop the Main activity we send a boolean message with the Intent
+    public void onExitClick(View view){
+        Intent i = new Intent(this, Start.class);
+        // MainMessage to know if the activity has started or not
+        i.putExtra("MainMessage",false);
+        // The activity starts
+        startActivity(i);
+    }
+
+    //Gives format to a date
+    public static String time(long milliSeconds,String dateFormat){
+        SimpleDateFormat formatter = new SimpleDateFormat(dateFormat);
+
+        //Get the current date and time
+        Calendar calendar = Calendar.getInstance();
+
+        calendar.setTimeInMillis(milliSeconds);
+
+        return formatter.format(calendar.getTime());
+    }
+
+
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+}

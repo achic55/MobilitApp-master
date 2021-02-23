@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
+        
+        <item name="windowActionBar">false</item> 
+        
+    </style>
+    
+      <style name="Widget.AppCompat.ProgressBar"
+           parent="Base.Widget.AppCompat.ProgressBar">
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+   <style name="Titulo" parent="TextAppearance.ShowcaseView.Title">
+       <item name="android:textColor">#FFFFFF</item>
+
+   </style>
+
+    <style name="Content" parent="TextAppearance.ShowcaseView.Detail">
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+    
+    <style name="Transparencia" parent="ShowcaseView.Light">
+        
+        <item name="sv_backgroundColor">#99000000</item>
+        <item name="sv_showcaseColor">#FF6600</item>
+        <item name="sv_titleTextAppearance">@style/Titulo</item>
+        <item name="sv_detailTextAppearance">@style/Content</item>
+        
+        
+    </style>
+
+    <!-- BAYO <style name="NewLook" parent="Theme.AppCompat" >-->
+    <style name="NewLook" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@android:color/holo_orange_dark</item>
+        <item name="android:textColorPrimary">@color/apptheme_color</item>
+        <item name="android:colorBackground">@color/primary_dark</item>
+    </style>
+
+</resources>

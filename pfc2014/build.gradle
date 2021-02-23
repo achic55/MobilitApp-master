@@ -1,0 +1,154 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.6.1'
+
+    }
+}
+
+// Required because retrolambda is on maven central
+repositories {
+    //mavenCentral()
+}
+
+
+
+apply plugin: 'com.android.application' //or apply plugin: 'java'
+apply plugin: 'com.chaquo.python'        // Add this line
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'LICENSE.txt'
+        pickFirst 'javax/annotation/**' // add this
+
+
+    }
+    dexOptions {
+
+        preDexLibraries = false
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+    compileSdkVersion 28
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "com.mobi.mobilitapp"
+        minSdkVersion 19
+        targetSdkVersion 26
+        multiDexEnabled = true
+        versionCode 38
+        versionName '4.3'
+        vectorDrawables.useSupportLibrary = true
+        python {
+            version "3.6.5"
+            pip{
+                install "pandas == 0.22.0"
+                install "numpy==1.14.2"
+                install "scikit-learn==0.19.1"
+
+            }
+            extractPackages "package1"
+        }
+        ndk {
+            abiFilters "x86_64", "arm64-v8a"
+        }
+
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFile 'proguard-config.cfg'
+            applicationVariants.all { variant ->
+                appendVersionName(variant, defaultConfig)
+            }
+
+        }
+
+
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+def appendVersionName(variant, defaultConfig) {
+    /*variant.outputs.each { output ->
+        if (output.zipAlign) {
+            def file = output.outputFile
+            def fileName = file.name.replace("pfc2014-release.apk", "MobilitApp-" + defaultConfig.versionName + "v.apk")
+            output.outputFile = new File(file.parent, fileName)
+        }
+
+        def file = output.packageApplication.outputFile
+        def fileName = file.name.replace("pfc2014-release.apk", "MobilitApp-" + defaultConfig.versionName + "v.apk")
+        output.packageApplication.outputFile = new File(file.parent, fileName)
+    }*/
+}
+
+configurations {
+    all*.exclude group: 'org.apache.commons'
+}
+
+dependencies {
+    compile project(':facebookSDK')
+    //compile project(':androidsupportv7palette')
+    //compile project(':cardViewLib')
+    //compile project(':testActivity')
+    compile files('libs/google-api-client-1.18.0-rc.jar')
+    compile files('libs/google-api-client-android-1.18.0-rc.jar')
+    compile files('libs/google-api-services-storage-v1-rev22-1.18.0-rc.jar')
+    compile files('libs/google-http-client-android-1.18.0-rc.jar')
+    compile files('libs/google-http-client-jackson2-1.18.0-rc.jar')
+    compile files('libs/google-http-client-jdo-1.18.0-rc.jar')
+    compile files('libs/google-oauth-client-1.18.0-rc.jar')
+    compile files('libs/jackson-core-2.1.3.jar')
+    //compile files('libs/jsr305-1.3.9.jar')
+    compile files('libs/GraphView-3.1.3.jar')
+    compile files('libs/poi-3.10-FINAL/reduced/aa-poi-3.10-min-0.1.5.jar')
+    compile files('libs/JTransforms-3.1-sources.jar')
+    compile files('libs/JTransforms-3.1-with-dependencies.jar')
+
+    compile 'com.google.http-client:google-http-client-gson:1.19.0'
+    compile 'com.google.code.gson:gson:2.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:mediarouter-v7:25.3.1'
+    compile 'com.android.support:gridlayout-v7:25.3.1'
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.opencsv:opencsv:3.3'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.koushikdutta.ion:ion:2.1.3'
+    compile 'joda-time:joda-time:2.7'
+    compile 'com.github.amlcurran.showcaseview:library:5.0.0'
+    //compile files('libs/commons-math3-3.6.1/commons-math3-3.6.1.jar')
+    //compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    //compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services:7.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+//added for charts by ANDREA AND JADY
+}

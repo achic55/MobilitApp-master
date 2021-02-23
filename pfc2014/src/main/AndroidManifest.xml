@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobi.mobilitapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.heartrate"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.barometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@style/NewLook"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <receiver android:name=".WifiReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Capture.ActivityRecognizedService" />
+
+        <activity android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <!--android:screenOrientation="sensor" >-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Inicio"
+            android:label="@string/app_name"
+            android:theme="@style/NewLook"
+            android:screenOrientation="portrait" >
+           <!-- android:screenOrientation="sensor" >-->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NewLook"
+            android:screenOrientation="portrait" />
+            <!--android:screenOrientation="sensor" />-->
+        <activity
+            android:name=".GraphActivity"
+            android:label="@string/graph"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrefAct"
+            android:label="@string/prefes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History"
+            android:label="@string/show_location_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Traffic"
+            android:label="@string/traffic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="title_facebook_login" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Google Maps v2 API -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA9bfAkMei1CR08HfFUCkC93rR-uEOlybE" />
+            <!--android:value="AIzaSyANN1DrfCliED-DrJr52pMMZqKwZXZpQuY" />-->
+        <!-- android:value="AIzaSyANN1DrfCliED-DrJr52pMMZqKwZXZpQuY" -->
+        <!-- android:value="AIzaSyANN1DrfCliED-DrJr52pMMZqKwZXZpQuY" signed -->
+
+        <service
+            android:name=".LocationService"
+            android:process=":LocationService" />
+        <!--
+        <service
+            android:name=".Sensor_Listener"
+            android:enabled="true" />
+        --> <!-- Rok Slamek - Temporary for development -->
+
+       <!-- <service
+                   android:name=".ActivityRecognitionService"
+                   android:process=":ActivityRecognitionService" />-->
+        <service
+            android:name=".CrashDetection.HandlersAndServices.AccelerometerServiceListener"
+            android:enabled="true" />
+        <service
+            android:name=".CrashDetection.HandlersAndServices.EmergencyService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/APP_ID" />
+
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help"
+            android:theme="@style/Theme.Transparent" />
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.mobi.mobilitapp" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".MyBroadcastReceiver"  android:exported="true">
+            <intent-filter>
+                <action android:name="com.mobi.mobilitatapp.ActivityRecognitionML.BROADCAST"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmMessageHandler" />
+        
+        <service android:name=".Uploading.UploadService"
+            android:exported="false" />
+
+        <service android:name=".ActivityRecognitionML.ActivityRecognitionMLService"
+            android:exported="false"/>
+
+        <activity
+            android:name=".CrashDetection.Acitivities.EmergencyMenuActivity"
+            android:label="@string/title_activity_emergency"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StepCounter.StepCounterActivity"
+            android:label="@string/title_activity_step_counter"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

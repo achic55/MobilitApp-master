@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="window">
+        <item>Distantzia (km)</item>
+        <item>Iraupena</item>
+        <item>Abiadura (km/h)</item>
+    </string-array>
+    <string-array name="window2">
+        <item>No Info</item>
+        <item>Itxita</item>
+        <item>Ondo</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>Trafiko asko</item>
+    </string-array>
+
+    <string name="action_settings">Ezarpenak</string>
+    <string name="app_name">MobilitApp</string>
+    <string name="show_location_history">Erregistroa</string>
+    <string name="login">Saioa hasi</string>
+    <string name="never">Saioa ez hasi</string>
+    <string name="range">Jaiotze urtea</string>
+    <string name="sex">Esan zure sexua</string>
+    <string name="agerange">Jaio zaren urtea</string>
+    <string name="weitext">Esan zure pisua kaloriak neurtzeko</string>
+    <string name="prefes">Lehentasunak</string>
+    <string name="crashDetectPrefs">Istripu detekzioa</string>
+
+    <string name="graph">Grafikoa</string>
+    <string name="perfil">Profila</string>
+    <string name="clean">Garbitu mapa</string>
+    <string name="mastarde">Gero</string>
+    <string name="APP_ID">687765521333184</string>
+    <string name="segur">Ziur zaude fitxategi hau ezabatu nahi duzula?</string>
+    <string name="closesess">Saioa itxi</string>
+    <string name="borrar">Fitxategia ezabatu</string>
+    <string name="pulsa">Sakatu saioa hasteko</string>
+    <string name="acep">Onartu</string>
+    <string name="cancel">Bertan behera utzi</string>
+    <string name="sesion">Saioa hasi</string>
+    <string name="graphtext">Kaloriak eta aurreztutako Co2-a</string>
+    <string name="rec">Ezin dira azkenaldiko fitxategiak ezabatu</string>
+    <string name="desc">WiFi-a deskonektatua</string>
+    <string name="wifi">WiFi-a behar da zure posizionamendua jakiteko</string>
+    <string name="req">Kokapena ezgaitu</string>
+    <string name="locat">Kokapena gaitu behar da</string>
+    <string name="abrir">Ireki</string>
+    <string name="cerrar">Itxi</string>
+    <string name="on_foot">Oinez</string>
+    <string name="tram">Tram</string>
+    <string name="renfe">Renfe</string>
+    <string name="vehicle">Kotxea</string>
+    <string name="bicycle">Bizikleta</string>
+    <string name="still">Geldirik</string>
+    <string name="transport">Garraiobidea</string>
+    <string name="metro">Metroz</string>
+    <string name="bus">Autobusez</string>
+    <string name="unknown">Ezezaguna</string>
+    <string name="male">Mutila</string>
+    <string name="female">Emakumea</string>
+    <string name="name">Izena</string>
+    <string name="surname">Abizenak</string>
+    <string name="gender">Generoa</string>
+    <string name="age">Jaiotze data</string>
+    <string name="weight">Pisua Kg-tan</string>
+    <string name="mail">Posta elektronikoa</string>
+    <string name="calor">Kaloriak (kcal)</string>
+    <string name="co2">Aurreztutako CO2-a (gr)</string>
+    <string name="traffic">Trafikoa</string>
+    <string name="help">Laguntza</string>
+    <string name="content_help">Pantaila nagusian agertzen diren botoien funtzioak.</string>
+    <string name="text_prefes">Atal honetan, adina, pisua eta generoa eguneratu daitezke.</string>
+    <string name="turn_off">Itzali</string>
+    <string name="text_turn_off">Botoi honekin aplikazioak egiten dituen beste funtzioak kendu daitezke.</string>
+    <string name="main_menu">Menu nagusia</string>
+    <string name="text_main_menu">Hau Menu Nagusia da, \n Historikoa, eguneroko zure kokapenak sailkaturik erakusten ditu \n Grafikoa, zuk erretako kaloriak eta aurreztutako Co2-ak koordenada grafika batean marrazten ditu. \n Garbitu mapa, mapa nagusian marraztutako dena ezabatzen du: marrak, seinale, intzidentziak \n Profila, erabiltzailearen kontuaren ezarpenak erakusten dira. \n Trafikoa, atal honetan\mapan ikusi ahalko dituzu, denbora errealean intzidentzia eta trafiko egoerari buruzko informazioa</string>
+    <string name="next">Hurrengoa</string>
+    <string name="title_activity_help">Laguntza</string>
+    <string name="history_menu">Erregistroa</string>
+    <string name="text_history_menu">Zure eguneroko kokapen erregistroa erakusten du.</string>
+    <string name="graph_menu">Grafikoa</string>
+    <string name="text_graph_menu">Erretako kaloriak eta aurreztutako C02-a marrazten ditu.</string>
+    <string name="clean_menu">Garbitu mapa</string>
+    <string name="text_clean_menu">Markadore guztiak ezabatu</string>
+    <string name="profile_menu">Profila</string>
+    <string name="text_profile_menu">Zure kontuko konfigurazioak erakutsiko ditu.</string>
+    <string name="traffic_menu">Trafikoa</string>
+    <string name="text_traffic_menu">Denbora errealean intzidentzia eta zirkulazio egoerei buruzko informazioa ikusi dezakezu hurrego mapan.</string>
+
+    <string name="hello_world">Kaixo jurrutulandia!!</string>
+    <string name="silenceTitle">Isiltasun modua</string>
+    <string name="silenceSummary">Zure mugikorra isiltasun moduan ezarriko da jarduera hautematen denean \"vehículo\"</string>
+
+    <string name="textCrashDetected">Ustezko istripua hauteman da. Mesedez, istripua izan duzun edo alarma faltsua den esaiguzu.</string>
+    <string name="emergencyButton">Larrialdiak</string>
+    <string name="false_alarm_button">Alarma Faltsua</string>
+    <string name="crash_detection_settings">Istripuen abisuak</string>
+    <string name="step_counter_settings">Urrats zenbatzailea</string>
+    <string name="On">Piztu</string>
+    <string name="Off">Itzali</string>
+    <string name="on_off">Piztu/Itzali</string>
+    <string name="high_sensitivity">Sentikortasun handia</string>
+    <string name="medium_sensitivity">Sentikortasun ertaina</string>
+    <string name="low_sensitivity">Sentikortasun baxua</string>
+    <string name="text_3_crash_levels">Hautatu erabilgarri dauden 3 mailetatik bat. Sentikortasun maila gorena sentikortasun handia da eta ahulena sentikortasun baxua.</string>
+
+    <string name="emergency_call">Larrialdi Deia</string>
+    <string name="r_u_sure_to_call">Ziur zaude larrialdietara deitu nahi duzula?</string>
+    <string name="yes">Bai</string>
+    <string name="no">Ez</string>
+
+    <string name="possibleAlertMessageSMS">"MobilitApp: Detektatuko istripua! Posizioa(Lat, Lon): "</string>
+    <string name="alertMessageSMSButton">"mobilitapp: Detektatuko istripua! Posizioa(Lat, Lon): "</string>
+
+    <string name="numberSaved">Zenbakia gordeta</string>
+    <string name="enterAPhoneNumber">Telefono zenbakia sartu</string>
+    <string name="failedToSaveTheNumber">Zenbakia gordetzean sortutako errorea</string>
+    <string name="sendASmsWhenAccident">SMSa bidali zure kontaktu bati istripua hautemandakoan</string>
+    <string name="save">Gorde</string>
+
+    <string name="no_phone_saved">Ez dago telefono zenbakirik gordeta</string>
+    <string name="r_u_sure_to_go_back">Ziur zaude telefono zenbakirik gorde gabe atzera bota nahi duzula?</string>
+    <string name="no_phone_saved_remember">Ez dago telefono zenbakirik gordeta. Ziurta ezazu telefono zenbakidun kontaktu bat hautatu duzula.</string>
+
+    <string name="crash_detection_activated">Istripu detekzioa aktibatua</string>
+    <string name="name_sms_contact">Izena</string>
+    <string name="phone_sms_contact">Telefono zenbakia</string>
+    <string name="add_contact">Hautatu zure kontaktua</string>
+
+    <string name="hint_medical_info">Adibidez: Penizilinari alergikoa</string>
+    <string name="medical_info">Osasun informazioa</string>
+    <string name="medical_info_message">Sar ezazu zure osasun informazioa. Erabili ditzakezu, gehienez, </string>
+    <string name="medical_info_characters">" karaktere."</string>
+    <string name="medical_info_saved">Osasun informazioa gordeta.</string>
+    <string name="medical_info_deleted">Osasun informazioa ezabatua.</string>
+    <string name="add_medial_info_button">Osasun informazioa gehitu</string>
+    <string name="step_counter_Tittle">Urrats zenbatzailea</string>
+    <string name="stepsToday">Gaur egindako urratsak</string>
+    <string name="distance">Distantzia</string>
+    <string name="calories">Kaloriak</string>
+    <string name="error">Errorea</string>
+    <string name="pedometer_incompatible">Gailu hau ez da bateragarria podometroarekin.</string>
+
+    <string name="today">Gaur</string>
+    <string name="total_since_last_reset">Guztira</string>
+    <string name="reset_data">Datuak ezabatu</string>
+    <string name="accelerometer">Azelerometroa</string>
+    <!-- FRAN news Strings -->
+    <string name="develop">Garapena bidean&#8230;</string>
+    <string name="develop_msg">Mesedez, gure app-a hobetzen lagun iezaguzu</string>
+    <string name="privacy_policy_message">MobilitApp erabiltzean gure Pribatutasun Politika <a href="http://mobilitat.upc.edu/policy">onartzen duzu.</a>.</string>
+    <string name="steps">Urratsak</string>
+    <string name="privacy_policy">Pribatutasun Politika</string>
+    <string name="train">Trena</string>
+    <string name="motorcycle">Motozikleta</string>
+    <string name="other">Bestelakoak&#8230;</string>
+    <string name="which">Zein garraiobide erabiliko duzu?</string>
+    <string name="exit">Irten?</string>
+    <string name="exit_msg">Sakatu berriro atzera egiteko botoia MobilitApp-etik irtetzeko</string>
+    <string name="press">Sakatu saioa hasteko</string>
+    <string name="no_selection">Garraiobiderik ez da aurkitu...</string>
+    <string name="add">Gehitu</string>
+    <string name="off">Itzali</string>
+    <string name="copyright">MobilitApp - 2019 &#169;</string>
+
+</resources>

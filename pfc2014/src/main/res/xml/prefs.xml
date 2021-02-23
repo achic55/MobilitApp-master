@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:entries="@array/gen"
+        android:entryValues="@array/genval"
+        android:key="genero"
+        android:summary="%s"
+        android:title="@string/gender" />
+
+
+
+    <EditTextPreference
+        android:inputType="number"
+        android:defaultValue="1900"
+        android:maxLength="4"
+        android:key="born"
+        android:summary="@string/agerange"
+        android:title="@string/range" />
+
+
+     <EditTextPreference
+        android:inputType="numberDecimal"
+        android:defaultValue="0"
+        android:maxLength="5"
+        android:key="peso"
+        android:summary="@string/weitext"
+        android:title="@string/weight" />
+
+    <CheckBoxPreference
+        android:key="silence"
+        android:title="@string/silenceTitle"
+        android:summary="@string/silenceSummary"/>
+
+
+    <ListPreference
+        android:key="language_key"
+        android:defaultValue="(Auto)"
+        android:entries="@array/own_language"
+        android:entryValues="@array/own_language"
+        android:title="@string/lang"
+        android:summary="%s"/>
+
+
+</PreferenceScreen>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gen">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+    <string-array name="genval">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="L1">
+        <item>Hospital de Bellvitge</item>
+        <item>Bellvitge</item>
+        <item>Av.Carrilet</item>
+        <item>Rbla. Just Oliveres</item>
+        <item>Can Serra</item>
+        <item>Florida</item>
+        <item>Torrassa</item>
+        <item>Santa Eulàlia</item>
+        <item>Mercat Nou</item>
+        <item>Plaça de Sants</item>
+        <item>Hostafrancs</item>
+        <item>Espanya</item>
+        <item>Rocafort</item>
+        <item>Urgell</item>
+        <item>Universitat</item>
+        <item>Catalunya</item>
+        <item>Urquinaona</item>
+        <item>Arc de Triomf</item>
+        <item>Marina</item>
+        <item>Glòries</item>
+        <item>Clot</item>
+        <item>Navas</item>
+        <item>La Sagrera</item>
+        <item>Fabra i Puig</item>
+        <item>Sant Andreu</item>
+        <item>Torres i Bages</item>
+        <item>Trinitat Vella</item>
+        <item>Baró de Viver</item>
+        <item>Santa Coloma</item>
+        <item>Fondo</item>
+    </string-array>
+    <string-array name="L2">
+        <item>Paral.lel</item>
+        <item>Sant Antoni</item>
+        <item>Universitat</item>
+        <item>Passeig de Gràcia</item>
+        <item>Tetuan</item>
+        <item>Monumental</item>
+        <item>Sagrada Família</item>
+        <item>Encants</item>
+        <item>Clot</item>
+        <item>Bac de Roda</item>
+        <item>Sant Martí</item>
+        <item>La Pau</item>
+        <item>Verneda</item>
+        <item>Artigues Sant Adrià</item>
+        <item>Sant Roc</item>
+        <item>Gorg</item>
+        <item>Pep Ventura</item>
+        <item>Badalona Pompeu Fabra</item>
+    </string-array>
+    <string-array name="L3">
+        <item>Trinitat Nova</item>
+        <item>Roquetes</item>
+        <item>Canyelles</item>
+        <item>Valldaura</item>
+        <item>Mundet</item>
+        <item>Montbau</item>
+        <item>Vall d\'Hebron</item>
+        <item>Penitents</item>
+        <item>Vallcarca</item>
+        <item>Lesseps</item>
+        <item>Fontana</item>
+        <item>Diagonal</item>
+        <item>Passeig de Gràcia</item>
+        <item>Catalunya</item>
+        <item>Liceu</item>
+        <item>Drassanes</item>
+        <item>Paral.lel</item>
+        <item>Poble Sec</item>
+        <item>Espanya</item>
+        <item>Tarragona</item>
+        <item>Sants Estació</item>
+        <item>Plaça del Centre</item>
+        <item>Les Corts</item>
+        <item>Maria Cristina</item>
+        <item>Palau Reial</item>
+        <item>Zona Universitària</item>
+    </string-array>
+    <string-array name="L4">
+        <item>La Pau</item>
+        <item>Besòs</item>
+        <item>Besòs Mar</item>
+        <item>El Maresme | Fórum</item>
+        <item>Selva de Mar</item>
+        <item>Poblenou</item>
+        <item>Llacuna</item>
+        <item>Bogatell</item>
+        <item>Ciutadella / Vila Olímpica</item>
+        <item>Barceloneta</item>
+        <item>Jaume I</item>
+        <item>Urquinaona</item>
+        <item>Passeig de Gràcia</item>
+        <item>Girona</item>
+        <item>Verdaguer</item>
+        <item>Joanic</item>
+        <item>Alfons X</item>
+        <item>Guinardó | Hospital de Sant Pau</item>
+        <item>Maragall</item>
+        <item>Llucmajor</item>
+        <item>Via Júlia</item>
+        <item>Trinitat Nova</item>
+    </string-array>
+    <string-array name="L5">
+        <item>Cornellà Centre</item>
+        <item>Gavarra</item>
+        <item>Sant Ildefons</item>
+        <item>Can Boixeres</item>
+        <item>Can Vidalet</item>
+        <item>Pubilla Cases</item>
+        <item>Collblanc</item>
+        <item>Badal</item>
+        <item>Plaça de Sants</item>
+        <item>Sants Estació</item>
+        <item>Entença</item>
+        <item>Hospital Clínic</item>
+        <item>Diagonal</item>
+        <item>Verdaguer</item>
+        <item>Sagrada Família</item>
+        <item>Sant Pau / Dos de Maig</item>
+        <item>Camp de l\'Arpa</item>
+        <item>La Sagrera</item>
+        <item>Congrés</item>
+        <item>Maragall</item>
+        <item>Virrei Amat</item>
+        <item>Vilapicina</item>
+        <item>Horta</item>
+        <item>El Carmel</item>
+        <item>El Coll / La Teixonera</item>
+        <item>Vall d\'Hebron</item>
+    </string-array>
+    <string-array name="transports">
+        <item>Bicicleta</item>
+        <item>Autobús</item>
+        <item>Coche</item>
+        <item>Metro</item>
+        <item>Moto</item>
+        <item>Correr</item>
+        <item>Estacionario</item>
+        <item>Tren</item>
+        <item>Tranvía</item>
+        <item>Caminar</item>
+    </string-array>
+
+</resources>

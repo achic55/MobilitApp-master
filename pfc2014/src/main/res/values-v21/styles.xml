@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BAYO<style name="NewLook" parent="Theme.AppCompat">-->
+    <style name="NewLook" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@android:color/holo_orange_dark</item>
+        <item name="android:textColorPrimary">@color/apptheme_color</item>
+        <item name="android:colorBackground">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@android:color/holo_orange_dark</item>
+        <item name="android:statusBarColor">@android:color/holo_red_dark</item>
+        <!-- BAYO<item name="windowActionBar">false</item> -->
+    </style>
+</resources>

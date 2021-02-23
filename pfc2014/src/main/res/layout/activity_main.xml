@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_blue_grey_800"
+        android:minHeight="?attr/actionBarSize" />
+
+    <Button
+        android:id="@+id/back_to_main"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="←"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/idPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <FrameLayout
+            android:id="@+id/container_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2B2B2B">
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#ccc"
+            android:choiceMode="singleChoice" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

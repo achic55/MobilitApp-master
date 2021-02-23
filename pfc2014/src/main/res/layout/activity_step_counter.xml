@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mobi.mobilitapp.StepCounter.StepCounterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/step_counter_Tittle"
+        android:id="@+id/stepCounterTittleText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchStepCounter"
+        android:layout_below="@+id/stepCounterTittleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textOn="@string/On"
+        android:textOff="@string/Off"
+        android:textSize="20sp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/switchStepCounter"
+        android:layout_marginTop="15dp" >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutStepCounter"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCC"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/today"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:id="@+id/stepTodayCounterText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:id="@+id/distanceTodayCounterText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calories"
+                android:id="@+id/caloriesTodayCounterText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCC"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/total_since_last_reset"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:id="@+id/stepTotalCounterText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:id="@+id/distanceTotalCounterText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calories"
+                android:id="@+id/caloriesTotalCounterText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCC"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_data"
+                android:background="@color/com_facebook_likeboxcountview_border_color"
+                android:layout_marginTop="5dp"
+                android:onClick="resetStepData" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

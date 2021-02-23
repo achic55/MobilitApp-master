@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Einstellungen</string>
+    <string name="app_name">MobilitApp</string>
+    <string name="show_location_history">Historie</string>
+    <string name="login">Log in</string>
+    <string name="range">Geburtsjahr</string>
+    <string name="sex">Wählen sie ihr Geschlecht</string>
+    <string name="agerange">Geben Sie ihr Geburtsjahr ein</string>
+    <string name="weitext">Geben Sie ihr Gewicht ein um ihre verbrannten Kalorien zu messen</string>
+
+    <string name="prefes">Präferenzen</string>
+
+    <string name="text_prefes">In dieser Sektion können Sie ihr Alter, Gewicht und Geschlächt ändern.</string>
+    <string name="graph">Graphik</string>
+    <string name="perfil">Profil</string>
+    <string name="clean">Karte reinigen</string>
+    <string name="mastarde">Später</string>
+    <string name="APP_ID">687765521333184</string>
+    <!-- <string name="APP_ID">1494927544093331</string> -->
+    <string name="segur">Sind Sie sicher, diese Datei zu löschen?</string>
+    <string name="pulsa">Drücken zum einloggen</string>
+    <string name="borrar">Datei löschen</string>
+    <string name="acep">Akzeptieren</string>
+    <string name="closesess">Abbmelden</string>
+    <string name="graphtext">Verbrennte Kalorien und gesparter CO2</string>
+    <string name="sesion">Einloggen</string>
+    <string name="rec">Es ist nicht erlaubt kürzlich erstellte Datein zu löschen</string>
+    <string name="wifi">Aktivieren Sie das WiFi um ihre Position zu erkennen</string>
+    <string name="req">Ortsbestimmung Deaktiviert</string>
+    <string name="abrir">Öffnen</string>
+    <string name="on_foot">Zu Fuß</string>
+    <string name="vehicle">Auto</string>
+    <string name="bus">Bus</string>
+    <string name="tram">Tram</string>
+    <string name="renfe">Renfe (spanisches Staatsbahnetz)</string>
+    <string name="bicycle">Fahrrad</string>
+    <string name="still">Stillstehend</string>
+    <string name="transport">Transport</string>
+    <string name="metro">U-Bahn</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="male">Mann</string>
+    <string name="female">Frau</string>
+    <string name="name">Name</string>
+    <string name="surname">Nachname</string>
+    <string name="gender">Geschlecht</string>
+    <string name="weight">Gewicht in Kg</string>
+    <string name="mail">e-mail</string>
+    <string name="calor">Kalorien (kcal)</string>
+    <string name="co2">CO2 gespart (gr)</string>
+    <string name="traffic">Verkehr</string>
+    <string name="help">Hilfe</string>
+    <string name="title_activity_help">Hilfe</string>
+    <string name="turn_off">Ausschalten</string>
+    <string name="text_turn_off">Mit dieser Taste können Sie alle Hintergrundfunktionen der MobilitApp abschalten.</string>
+    <string name="next">Nächster</string>
+    <string name="text_history_menu">Zeigt ihren Standort geordnet Tag für Tag.</string>
+    <string name="graph_menu">Graphik</string>
+    <string name="text_graph_menu">Zeichnet eine Koordinaten-Graphik der verbrannten Kalorien und gespartem CO2.</string>
+    <string name="clean_menu">Karte löschen</string>
+    <string name="text_clean_menu">Löschen Sie alle Strecken die zur Karte hinzugefügt worden sind: Linien, Markierungen, Vorkommen...</string>
+    <string name="profile_menu">Profil</string>
+    <string name="text_profile_menu">Hier erscheinen ihre Benutzereinstellungen.</string>
+    <string name="traffic_menu">Verkehr</string>
+    <string name="text_traffic_menu">Auf der Karte können Sie in Echtzeit die Verkehrsgeschehen verfolgen.</string>
+    <string name="silenceTitle">Lautlos-Modus</string>
+    <string name="silenceSummary">Ankreuzen um das Telefon in den Lautlos-Modus zu stellen wenn die Aktivität \"Fahrzeug\" festgestellt wird</string>
+
+    <string name="textCrashDetected">Ein möglicher Unfall wurde festgestellt. Bitte geben Sie uns bescheid ob Sie einen Unfall hatten oder ob es sich um einen Falschen Alarm handelt.</string>
+    <string name="emergencyButton">Notfall</string>
+    <string name="false_alarm_button">Fehlalarm</string>
+    <string name="step_counter_settings">Schrittmesser</string>
+    <string name="On">Ein</string>
+    <string name="Off">Aus</string>
+
+    <string name="emergency_call">Notruf</string>
+    <string name="r_u_sure_to_call">Sind Sie siche dass Sie die Notrufzentrale anrufen möchten?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+
+    <string name="possibleAlertMessageSMS">"MobilitApp: Unfall festgestellt! Position(Lat, Lon): "</string>
+    <string name="alertMessageSMSButton">"MobilitApp: Unfall festgestellt! Position(Lat, Lon): "</string>
+
+    <string name="title_activity_step_counter">StepCounterActivity</string>
+    <string name="step_counter_Tittle">Schrittmesser</string>
+    <string name="steps">Schritte</string>
+    <string name="distance">Distanz</string>
+    <string name="calories">Kalorien</string>
+    <string name="error">Fehler</string>
+    <string name="pedometer_incompatible">Dieses Gerät ist nicht mit dem Schrittmesser vereinbar</string>
+
+    <string name="today">Heute</string>
+    <string name="total_since_last_reset">Total</string>
+    <string name="reset_data">Datei löschen</string>
+    <string name="age">Geburtsjahr</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="cerrar">Schließen</string>
+    <string name="content_help">Funktionen der Tasten der Startseite</string>
+    <string name="desc">WiFi Deaktiviert</string>
+    <string name="history_menu">Historie</string>
+    <string name="locat">Ortsbestimmung muss aktiviert werden</string>
+
+    <!-- FRAN new Strings -->
+    <string name="privacy_policy_message">Bei der Benutzung von MobilitApp stimmen Sie unserer <a href="http://mobilitat.upc.edu/policy">Datenschutzerklärung</a> zu.</string>
+    <string name="privacy_policy">Datenschutzerklärung</string>
+    <string name="exit_msg">Drücken Sie die Zurück-Taste um MobilitApp zu verlassen</string>
+    <string name="add">Add</string>
+    <string name="off">Off</string>
+    <string name="copyright">MobilitApp - 2019 &#169;</string>
+</resources>

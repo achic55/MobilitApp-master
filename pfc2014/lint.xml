@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="InflateParams">
+        <ignore path="src/com/example/pfc2014/Header.java" />
+        <ignore path="src/com/example/pfc2014/ItemList.java" />
+    </issue>
+    <issue id="TrulyRandom">
+        <ignore path="src/com/example/pfc2014/LocationService.java" />
+    </issue>
+</lint>

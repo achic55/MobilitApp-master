@@ -1,0 +1,5 @@
+include ':cardViewLib'
+include ':facebookSDK'
+include ':testActivity'
+include ':androidsupportv7palette'
+include ':pfc2014'

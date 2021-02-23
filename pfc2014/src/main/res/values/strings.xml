@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="window">
+        <item>Distance (km)</item>
+        <item>Duration</item>
+        <item>Speed (km/h)</item>
+    </string-array>
+    <string-array name="window2">
+        <item>No Info</item>
+        <item>Closed</item>
+        <item>Fast</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">MobilitApp</string>
+    <string name="show_location_history">History</string>
+    <string name="login">Log in</string>
+    <string name="never">Do not log in</string>
+    <string name="range">Year of birth</string>
+    <string name="sex">Choose your gender</string>
+    <string name="agerange">Fill your year of birth</string>
+    <string name="weitext">Set your weight to compute your calories burned</string>
+
+    <string name="prefes">Preferences</string>
+    <string name="crashDetectPrefs">Crash Detection</string>
+
+    <string name="text_prefes">In this section you can update your Age, Weight and Gender Preferences</string>
+    <string name="graph">Graph</string>
+    <string name="perfil">Profile</string>
+    <string name="clean">Clean Map</string>
+    <string name="mastarde">Later</string>
+    <string name="registroOpcional">Optional login. The only data we use are: age, sex and weight (for calculating calories burned)</string>
+    <string name="APP_ID">687765521333184</string>
+    <!-- <string name="APP_ID">1494927544093331</string> -->
+    <string name="segur">Are you sure you want to delete this file?</string>
+    <string name="pulsa">Press to Log in</string>
+    <string name="borrar">Delete File</string>
+    <string name="acep">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="closesess">Log Out</string>
+    <string name="graphtext">Calories burned and Co2 saved</string>
+    <string name="sesion">Log In</string>
+    <string name="rec">It is not allowed to delete recent files</string>
+    <string name="desc">WiFi Desconectado</string>
+    <string name="wifi">Activate wifi to obtain your position</string>
+    <string name="req">Localization deactivated</string>
+    <string name="locat">Localization must be activated</string>
+    <string name="abrir">Open</string>
+    <string name="cerrar">Close</string>
+    <string name="on_foot">On Foot</string>
+    <string name="vehicle">Car</string>
+    <string name="bus">Bus</string>
+    <string name="motorcycle">Motorcycle</string>
+    <string name="tram">Tram</string>
+    <string name="train">Train</string>
+    <string name="renfe">Renfe</string>
+    <string name="bicycle">Bicycle</string>
+    <string name="still">Still</string>
+    <string name="transport">Transport</string>
+    <string name="metro">Metro</string>
+    <string name="other">Other&#8230;</string>
+    <string name="unknown">Unknown</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="gender">Gender</string>
+    <string name="age">Year of birth</string>
+    <string name="weight">Weight in Kg</string>
+    <string name="mail">e-mail</string>
+    <string name="calor">Calories (kcal)</string>
+    <string name="co2">CO2 saved (gr)</string>
+    <string name="traffic">Traffic</string>
+    <string name="help">Help</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="title_activity_help">Help</string>
+    <string name="content_help">Features of the buttons on your main screen</string>
+    <string name="turn_off">Turn Off</string>
+    <string name="text_turn_off">With this button you can turn off the background operations of the MobilitApp.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="next">Next</string>
+    <string name="history_menu">History</string>
+    <string name="text_history_menu">Shows your locations classified day by day.</string>
+    <string name="graph_menu">Graph</string>
+    <string name="text_graph_menu">Draws a coordinates graph with your calories burned and CO2 saved.</string>
+    <string name="clean_menu">Clean Map</string>
+    <string name="text_clean_menu">Erases all drawings added to the main map: lines, markers, incidences&#8230;</string>
+    <string name="profile_menu">Profile</string>
+    <string name="text_profile_menu">It will show your user account settings.</string>
+    <string name="traffic_menu">Traffic</string>
+    <string name="text_traffic_menu">You will be able to see in the map the real-time incidence and traffic state information.</string>
+    <string name="silenceTitle">Silence Mode</string>
+    <string name="silenceSummary">Tick to set the mobile in Silence Mode when the \"vehicle\" activity is detected</string>
+    <string name="title_activity_emergency">EmergencyActivity</string>
+    <string name="title_activity_settings_crash_detection">SettingsCrashDetectionActivity</string>
+    <string name="title_activity_emergancy_call">EmergancyCallActivity</string>
+
+    <string name="textCrashDetected">A possible crash has been detected. Please let us know if you have had an accident or if it is a false alarm.</string>
+    <string name="emergencyButton">Emergency</string>
+    <string name="false_alarm_button">False Alarm</string>
+    <string name="crash_detection_settings">Notify accident</string>
+    <string name="step_counter_settings">Step Counter</string>
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+    <string name="on_off">On/Off</string>
+    <string name="high_sensitivity">High sensitivity</string>
+    <string name="medium_sensitivity">Medium sensitivity</string>
+    <string name="low_sensitivity">Low sensitivity</string>
+    <string name="text_3_crash_levels">Select one of the 3 available levels. High sensitivity mode is the most sensitive and Low sensitivity is the most permissive.</string>
+
+    <string name="emergency_call">Emergency Call</string>
+    <string name="r_u_sure_to_call">Are you sure you want to call emergency?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="possibleAlertMessageSMS">"mobilitapp: Accident detected! Position(Lat, Lon): "</string>
+    <string name="alertMessageSMSButton">"MobilitApp: Accident detected! Position(Lat, Lon): "</string>
+
+    <string name="numberSaved">Number saved</string>
+    <string name="enterAPhoneNumber">Enter a phone number</string>
+    <string name="failedToSaveTheNumber">Failed to save the number</string>
+    <string name="sendASmsWhenAccident">Send a SMS to a contact when an accident is detected</string>
+    <string name="save">Save</string>
+
+    <string name="no_phone_saved">There is no phone saved</string>
+    <string name="r_u_sure_to_go_back">Are you sure you want to go back without saving any phone number?</string>
+    <string name="no_phone_saved_remember">There is no phone saved. Be sure to select a contact with phone number</string>
+
+    <string name="crash_detection_activated">Crash detection activated</string>
+    <string name="name_sms_contact">Name</string>
+    <string name="phone_sms_contact">Phone number</string>
+    <string name="add_contact">Choose a contact</string>
+
+    <string name="hint_medical_info">e.g. Allergic to penicillin</string>
+    <string name="medical_info">Medical information</string>
+    <string name="medical_info_message">Enter medical information. You can use a maximum of </string>
+    <string name="medical_info_characters"> characters.</string>
+    <string name="medical_info_saved">Medical info saved</string>
+    <string name="medical_info_deleted">Medical info deleted</string>
+    <string name="add_medial_info_button">Add medical information</string>
+    <string name="title_activity_step_counter">StepCounterActivity</string>
+    <string name="step_counter_Tittle">Step Counter</string>
+    <string name="steps">Steps</string>
+    <string name="distance">Distance</string>
+    <string name="calories">Calories</string>
+    <string name="error">Error</string>
+    <string name="pedometer_incompatible">This device is not compatible with the pedometer.</string>
+
+    <string name="today">Today</string>
+    <string name="total_since_last_reset">Total</string>
+    <string name="reset_data">Delete Data</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="text_main_menu">This is the Main Menu, \n History, shows your locations classified day by day \n Graph, draws a coordinates graphic with your calories burned and CO2 saved. \n Clean Map, erase all draws added to the main map: lines, markers, incidences \n Profile, will show your user account settings. \n Traffic, in this section you\'ll be able to see in the map, real-time incidence and traffic state information</string>
+
+
+    <!-- Fran Medina news Strings -->
+    <string name="develop">Ongoing development&#8230;</string>
+    <string name="develop_msg">Please help us to improve our App</string>
+    <string name="privacy_policy_message">By using MobilitApp you agree to our <a href="http://mobilitat.upc.edu/policy">Privacy Policy</a>.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="stepsToday">Steps Today</string>
+    <string name="which">Which transport are you going to use?</string>
+    <string name="exit">Exit?</string>
+    <string name="exit_msg">Press back key again to exit from MobilitApp</string>
+    <string name="press">Press to log in</string>
+    <string name="no_selection">No mobility selected...</string>
+    <string name="send">Send</string>
+    <string name="off">Off</string>
+    <string name="add">Add</string>
+    <string name="preference_file_key">edu.upc.mobilitat.mobilitappdev</string>
+    <string name="choose_file">Choose your file to upload...</string>
+    <string name="send_data">Send data</string>
+    <string name="copyright">MobilitApp - 2019 ©</string>
+    <string name="start">Start</string>
+    <string name="select_activity">Select activity</string>
+    <string name="lang">Language</string>
+
+</resources>

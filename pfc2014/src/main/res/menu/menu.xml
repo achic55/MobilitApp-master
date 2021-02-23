@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/prf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/prefes"/>
+
+    <item
+        android:id="@+id/stepCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/step_counter_settings"/>
+
+    <item
+        android:id="@+id/sendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/send_data"/>
+
+    <!--<item
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="@string/send"
+        app:showAsAction="always"
+        tools:ignore="missingPrefix" />
+        -->
+
+<!-- BAYO    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_find_replace_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="adding"
+        app:showAsAction="always"
+        tools:ignore="missingPrefix" />
+        -->
+
+
+    <item
+        android:id="@+id/addActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/add"
+        app:showAsAction="always"
+        tools:ignore="missingPrefix" />
+
+    <item android:id="@+id/exit"
+        android:icon="@drawable/shutdown"
+        android:title="@string/off"
+        tools:ignore="missingPrefix"
+        app:showAsAction="always"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</menu>

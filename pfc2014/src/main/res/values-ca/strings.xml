@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="window">
+        <item>Distància (km)</item>
+        <item>Duració</item>
+        <item>Velocitat (km/h)</item>
+    </string-array>
+
+    <string-array name="window2">
+        <item>No Info</item>
+        <item>Tancat</item>
+        <item>Fluid</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>Congestionat</item>
+    </string-array>
+
+    <string name="app_name">MobilitApp</string>
+    <string name="show_location_history">Historial</string>
+    <string name="login">Log in</string>
+    <string name="range">Any de naixement</string>
+    <string name="sex">Indiqui el seu sexe</string>
+    <string name="agerange">Indiqui el seu any de naixement</string>
+    <string name="weitext">Indiqui el seu pes per poder calcular les calories perdudes</string>
+    <string name="prefes">Preferències</string>
+
+    <string name="graph">Gràfica</string>
+    <string name="clean">Netejar Mapa</string>
+    <string name="perfil">Perfil</string>
+    <string name="mastarde">Més tard</string>
+    <string name="closesess">Tancar Sessió</string>
+   <string name="APP_ID">687765521333184</string>
+    <string name="segur">Estàs segur d\'esborrar aquest fitxer?</string>
+    <string name="pulsa">Prem per iniciar sessió</string>
+    <string name="borrar">Esborrar Fitxer</string>
+    <string name="acep">Acceptar</string>
+    <string name="cancel">Cancel·lar</string>
+    <string name="sesion">Iniciar Sessió</string>
+    <string name="graphtext">Calories i Co2 estalviat</string>
+    <string name="rec">No es poden esborrar arxius recents</string>
+    <string name="desc">WiFi Desconnectat</string>
+    <string name="wifi">Es necessita tenir activat el WiFi per obtenir la seva posició</string>
+    <string name="req">Localització Desactivada</string>
+    <string name="locat">Es necessita activar la localització</string>
+    <string name="abrir">Obrir</string>
+    <string name="cerrar">Tancar</string>
+    <string name="tram">Tram</string>
+    <string name="renfe">Renfe</string>
+    <string name="on_foot">A peu</string>
+    <string name="vehicle">En cotxe</string>
+    <string name="bicycle">En bicicleta</string>
+    <string name="still">Aturat</string>
+    <string name="bus">Bus</string>
+    <string name="transport">Transport</string>
+    <string name="metro">Metro</string>
+    <string name="unknown">Desconegut</string>
+    <string name="male">Home</string>
+    <string name="female">Dona</string>
+    <string name="name">Nom</string>
+    <string name="surname">Cognoms</string>
+    <string name="gender">Gènere</string>
+    <string name="age">Any de naixement</string>
+    <string name="weight">Pes en Kg</string>
+    <string name="mail">Correu</string>
+    <string name="calor">Calories (kcal)</string>
+    <string name="co2">CO2 estalviat (gr)</string>
+    <string name="traffic">Trànsit</string>
+    <string name="help">Ajuda</string>
+    <string name="title_activity_help">Ajuda</string>
+    <string name="content_help">Funcions dels botons que apareixen a la pantalla principal</string>
+    <string name="turn_off">Apagar</string>
+    <string name="text_turn_off">Amb aquest botó podrà desactivar les operacions que MobilitApp fa en segon plà.</string>
+    <string name="text_prefes">En aquesta secció, es pot actualitzar l\'Edat, el Peso y el Sexe</string>
+    <string name="next">Següent</string>
+    <string name="history_menu">Historial</string>
+    <string name="text_history_menu">Mostra les ubicacions classificades dia a dia..</string>
+    <string name="graph_menu">Gràfica</string>
+    <string name="text_graph_menu"> Dibuixa un gràfic de coordenades amb les calories cremades i el CO2 estalviat.</string>
+    <string name="clean_menu">Esborrar Mapa</string>
+    <string name="text_clean_menu">Esborra tots els dibuixos afegit al mapa principal: línies, marcadors</string>
+    <string name="profile_menu">Perfil</string>
+    <string name="text_profile_menu">Es mostrarà la configuració del seu compte d\'usuari.</string>
+    <string name="traffic_menu">Trànsit</string>
+    <string name="text_traffic_menu">Vostè veurà en el mapa la informació en temps real de l\'estat del trànsit i incidències.</string>
+    <string name="silenceTitle">Mode Silenci</string>
+    <string name="silenceSummary">Tick per establir el mòbil en mode silenci quan es detecta l\'activitat \"vehicle\"</string>
+
+    <string name="textCrashDetected">S\'ha detectat un possible accident. Si us plau, indiqui\'ns si ha sofert un accident o si és una falsa alarma.</string>
+    <string name="emergencyButton">Emergència</string>
+    <string name="false_alarm_button">Falsa Alarma</string>
+    <string name="step_counter_settings">Comptador de passos</string>
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+
+    <string name="emergency_call">Trucada d\'Emergencia</string>
+    <string name="r_u_sure_to_call">Està vostè segur de que vol trucar a emergències?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <string name="possibleAlertMessageSMS">"MobilitApp: Accident detectat! Posició(Lat, Lon): "</string>
+    <string name="alertMessageSMSButton">"MobilitApp: Accident detectat! Posició(Lat, Lon): "</string>
+
+    <string name="step_counter_Tittle">Comptador de passos</string>
+    <string name="steps">Passos</string>
+    <string name="distance">Distància</string>
+    <string name="calories">Calories</string>
+    <string name="error">Error</string>
+    <string name="pedometer_incompatible">Aquest dispositiu no és compatible amb el podòmetre.</string>
+
+    <string name="today">Avui</string>
+    <string name="total_since_last_reset">Total</string>
+    <string name="reset_data">Esborrar dades</string>
+    <string name="action_settings">Ajustaments</string>
+
+    <!-- FRAN new Strings -->
+    <string name="privacy_policy_message">A l\'utilitzar MobilitApp està acceptant la nostra <a href="http://mobilitat.upc.edu/policy">Política de Pivacitat</a>.</string>
+    <string name="privacy_policy">Política de Privacitat</string>
+    <string name="exit_msg">Torneu a prémer la tecla enrere per sortir de MobilitApp</string>
+    <string name="add">Add</string>
+    <string name="off">Off</string>
+    <string name="copyright">MobilitApp - 2019 &#169;</string>
+
+</resources>
